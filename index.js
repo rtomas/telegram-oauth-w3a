@@ -109,7 +109,7 @@ app.get("/telegram/login", (req, res) => {
     const telegramBotId = "oauth_w3a_bot" // 6959558062
     const telegramRedirectUri = "https://telegram-oauth-w3a.vercel.app/telegram/callback"
      res.redirect(
-        `https://oauth.telegram.org/auth?bot_id=547043436&return_to=${telegramRedirectUri}&origin=https://telegram-oauth-w3a.vercel.app/telegram/login`
+        `https://oauth.telegram.org/auth?bot_id=547043436&return_to=${telegramRedirectUri}&origin=https://telegram-oauth-w3a.vercel.app`
     );
 });
 
