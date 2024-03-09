@@ -11,10 +11,10 @@ dotenv.config();
 const app = express();
 const port = 5005;
 
-const privateKey = fs.readFileSync(process.env.PRIVATE_KEY_FILE_NAME);
-const githubClientId = process.env.GITHUB_CLIENT_ID;
-const githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
-const githubRedirectUri = process.env.GITHUB_REDIRECT_URI;
+const privateKey = "";
+const githubClientId = "process.env.GITHUB_CLIENT_ID";
+const githubClientSecret = "process.env.GITHUB_CLIENT_SECRET";
+const githubRedirectUri = "process.env.GITHUB_REDIRECT_URI";
 
 app.use(cors());
 
