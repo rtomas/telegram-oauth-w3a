@@ -107,9 +107,9 @@ const generateJwtToken = (userData) => {
 app.get("/telegram/login", (req, res) => {
     //6959558062:AAGKn92pAqeV42UoYTykUwZ0LyueEnlvGqY
     const telegramBotId = "oauth_w3a_bot" // 6959558062
-    const telegramRedirectUri = "http://127.0.0.1:5005/telegram/callback"
+    const telegramRedirectUri = "https://telegram-oauth-w3a.vercel.app/telegram/callback"
      res.redirect(
-        `https://oauth.telegram.org/auth?bot_id=547043436&return_to=${telegramRedirectUri}&origin=http://127.0.0.1/telegram/login`
+        `https://oauth.telegram.org/auth?bot_id=547043436&return_to=${telegramRedirectUri}&origin=https://telegram-oauth-w3a.vercel.app/telegram/login`
     );
 });
 
